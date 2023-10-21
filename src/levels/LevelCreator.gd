@@ -71,6 +71,7 @@ func process_cursor_movement():
 			if child != $Cursor and child.get("position") != null and child.position == $Cursor.position:
 				self.remove_child(child)
 				level_list[int(cursor_location.y)][int(cursor_location.x)] = 0
+		update_counters()
 		return
 	
 	if Input.is_action_just_pressed("aux"):

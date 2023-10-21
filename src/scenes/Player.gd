@@ -198,10 +198,10 @@ func reverse_velocity():
 	increasing_velocity = false
 
 func teleport_to_centre():
-	if position.x < -BOARD_SIZE/2: position.x += BOARD_SIZE
-	elif position.x > BOARD_SIZE/2: position.x -= BOARD_SIZE
-	if position.y < -BOARD_SIZE/2: position.y += BOARD_SIZE
-	elif position.y > BOARD_SIZE/2: position.y -= BOARD_SIZE
+	if position.x < -3264: position.x += BOARD_SIZE
+	elif position.x > 2880: position.x -= BOARD_SIZE
+	if position.y < -3264: position.y += BOARD_SIZE
+	elif position.y > 2880: position.y -= BOARD_SIZE
 
 func nearest_right_angle_vector(vector):
 	if vector == Vector2.ZERO: return Vector2.UP
@@ -223,6 +223,7 @@ func start_spring_jump():
 	velocity = 2.2*MAX_VELOCITY if velocity >= 0 else 5*-MAX_VELOCITY
 	height = [44 / game_speed, true]
 	turn_timer = 0
+	self.rotation = camera_dir.angle() + PI/2
 
 func get_cross_distance():
 	if (camera_dir == Vector2.UP and velocity >= 0) or (camera_dir == Vector2.DOWN and velocity < 0):

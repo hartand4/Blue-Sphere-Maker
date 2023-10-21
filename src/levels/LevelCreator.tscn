@@ -69,31 +69,36 @@ texture = ExtResource( 4 )
 position = Vector2( 96, 286 )
 scale = Vector2( 0.667, 0.667 )
 texture = ExtResource( 6 )
-hframes = 10
+hframes = 8
+vframes = 2
 
 [node name="Units" type="Sprite" parent="Sidebar"]
 position = Vector2( 160, 286 )
 scale = Vector2( 0.667, 0.667 )
 texture = ExtResource( 6 )
-hframes = 10
+hframes = 8
+vframes = 2
 
 [node name="Tens" type="Sprite" parent="Sidebar"]
 position = Vector2( 128, 286 )
 scale = Vector2( 0.667, 0.667 )
 texture = ExtResource( 6 )
-hframes = 10
+hframes = 8
+vframes = 2
 
 [node name="Palette" type="Sprite" parent="Sidebar"]
 position = Vector2( 128, 70 )
 scale = Vector2( 0.667, 0.667 )
 texture = ExtResource( 6 )
-hframes = 10
+hframes = 8
+vframes = 2
 
 [node name="LevelNumber" type="Sprite" parent="Sidebar"]
 position = Vector2( 128, 490 )
 scale = Vector2( 0.667, 0.667 )
 texture = ExtResource( 6 )
-hframes = 10
+hframes = 8
+vframes = 2
 
 [node name="Arrow" type="Sprite" parent="Sidebar"]
 position = Vector2( 130, 212 )
@@ -106,19 +111,22 @@ frame = 5
 position = Vector2( 96, 386 )
 scale = Vector2( 0.667, 0.667 )
 texture = ExtResource( 6 )
-hframes = 10
+hframes = 8
+vframes = 2
 
 [node name="TensB" type="Sprite" parent="Sidebar"]
 position = Vector2( 128, 386 )
 scale = Vector2( 0.667, 0.667 )
 texture = ExtResource( 6 )
-hframes = 10
+hframes = 8
+vframes = 2
 
 [node name="UnitsB" type="Sprite" parent="Sidebar"]
 position = Vector2( 160, 386 )
 scale = Vector2( 0.667, 0.667 )
 texture = ExtResource( 6 )
-hframes = 10
+hframes = 8
+vframes = 2
 
 [node name="Cursor" type="Sprite" parent="."]
 position = Vector2( -22, -22 )

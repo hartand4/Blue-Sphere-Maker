@@ -78,202 +78,338 @@ texture = ExtResource( 2 )
 
 [node name="Stage1" type="TextureRect" parent="Levels"]
 margin_left = 78.0
-margin_top = 400.0
+margin_top = 288.0
 margin_right = 198.0
-margin_bottom = 440.0
+margin_bottom = 328.0
 texture = ExtResource( 1 )
 
 [node name="Stage2" type="TextureRect" parent="Levels"]
 margin_left = 78.0
-margin_top = 448.0
+margin_top = 336.0
 margin_right = 198.0
-margin_bottom = 488.0
+margin_bottom = 376.0
 texture = ExtResource( 1 )
 
 [node name="Stage3" type="TextureRect" parent="Levels"]
 margin_left = 78.0
-margin_top = 496.0
+margin_top = 384.0
 margin_right = 198.0
-margin_bottom = 536.0
+margin_bottom = 424.0
 texture = ExtResource( 1 )
 
 [node name="Stage4" type="TextureRect" parent="Levels"]
 margin_left = 78.0
-margin_top = 544.0
+margin_top = 432.0
 margin_right = 198.0
-margin_bottom = 584.0
+margin_bottom = 472.0
 texture = ExtResource( 1 )
 
 [node name="Stage5" type="TextureRect" parent="Levels"]
 margin_left = 78.0
-margin_top = 592.0
+margin_top = 480.0
 margin_right = 198.0
-margin_bottom = 632.0
+margin_bottom = 520.0
 texture = ExtResource( 1 )
 
 [node name="Stage6" type="TextureRect" parent="Levels"]
-margin_left = 557.0
-margin_top = 400.0
-margin_right = 677.0
-margin_bottom = 440.0
+margin_left = 78.0
+margin_top = 528.0
+margin_right = 198.0
+margin_bottom = 568.0
 texture = ExtResource( 1 )
 
 [node name="Stage7" type="TextureRect" parent="Levels"]
-margin_left = 557.0
-margin_top = 448.0
-margin_right = 677.0
-margin_bottom = 488.0
+margin_left = 78.0
+margin_top = 576.0
+margin_right = 198.0
+margin_bottom = 616.0
 texture = ExtResource( 1 )
 
 [node name="Stage8" type="TextureRect" parent="Levels"]
-margin_left = 557.0
-margin_top = 496.0
-margin_right = 677.0
-margin_bottom = 536.0
+margin_left = 78.0
+margin_top = 624.0
+margin_right = 198.0
+margin_bottom = 664.0
 texture = ExtResource( 1 )
 
 [node name="Stage9" type="TextureRect" parent="Levels"]
 margin_left = 557.0
-margin_top = 544.0
+margin_top = 288.0
 margin_right = 677.0
-margin_bottom = 584.0
+margin_bottom = 328.0
 texture = ExtResource( 1 )
 
 [node name="Stage10" type="TextureRect" parent="Levels"]
 margin_left = 557.0
-margin_top = 590.0
+margin_top = 336.0
 margin_right = 677.0
-margin_bottom = 630.0
+margin_bottom = 376.0
 texture = ExtResource( 1 )
 
-[node name="Edit11" type="TextureRect" parent="Levels"]
+[node name="Stage11" type="TextureRect" parent="Levels"]
+margin_left = 557.0
+margin_top = 384.0
+margin_right = 677.0
+margin_bottom = 424.0
+texture = ExtResource( 1 )
+
+[node name="Stage12" type="TextureRect" parent="Levels"]
+margin_left = 557.0
+margin_top = 432.0
+margin_right = 677.0
+margin_bottom = 472.0
+texture = ExtResource( 1 )
+
+[node name="Stage13" type="TextureRect" parent="Levels"]
+margin_left = 557.0
+margin_top = 480.0
+margin_right = 677.0
+margin_bottom = 520.0
+texture = ExtResource( 1 )
+
+[node name="Stage14" type="TextureRect" parent="Levels"]
+margin_left = 557.0
+margin_top = 528.0
+margin_right = 677.0
+margin_bottom = 568.0
+texture = ExtResource( 1 )
+
+[node name="Stage15" type="TextureRect" parent="Levels"]
+margin_left = 557.0
+margin_top = 576.0
+margin_right = 677.0
+margin_bottom = 616.0
+texture = ExtResource( 1 )
+
+[node name="Stage16" type="TextureRect" parent="Levels"]
+margin_left = 557.0
+margin_top = 624.0
+margin_right = 677.0
+margin_bottom = 664.0
+texture = ExtResource( 1 )
+
+[node name="Edit1" type="TextureRect" parent="Levels"]
 margin_left = 312.0
-margin_top = 400.0
+margin_top = 288.0
 margin_right = 432.0
-margin_bottom = 440.0
+margin_bottom = 328.0
+texture = ExtResource( 4 )
+
+[node name="Edit2" type="TextureRect" parent="Levels"]
+margin_left = 312.0
+margin_top = 336.0
+margin_right = 432.0
+margin_bottom = 376.0
+texture = ExtResource( 4 )
+
+[node name="Edit3" type="TextureRect" parent="Levels"]
+margin_left = 312.0
+margin_top = 384.0
+margin_right = 432.0
+margin_bottom = 424.0
+texture = ExtResource( 4 )
+
+[node name="Edit4" type="TextureRect" parent="Levels"]
+margin_left = 312.0
+margin_top = 432.0
+margin_right = 432.0
+margin_bottom = 472.0
+texture = ExtResource( 4 )
+
+[node name="Edit5" type="TextureRect" parent="Levels"]
+margin_left = 312.0
+margin_top = 480.0
+margin_right = 432.0
+margin_bottom = 520.0
+texture = ExtResource( 4 )
+
+[node name="Edit6" type="TextureRect" parent="Levels"]
+margin_left = 312.0
+margin_top = 528.0
+margin_right = 432.0
+margin_bottom = 568.0
+texture = ExtResource( 4 )
+
+[node name="Edit7" type="TextureRect" parent="Levels"]
+margin_left = 312.0
+margin_top = 576.0
+margin_right = 432.0
+margin_bottom = 616.0
+texture = ExtResource( 4 )
+
+[node name="Edit8" type="TextureRect" parent="Levels"]
+margin_left = 312.0
+margin_top = 624.0
+margin_right = 432.0
+margin_bottom = 664.0
+texture = ExtResource( 4 )
+
+[node name="Edit9" type="TextureRect" parent="Levels"]
+margin_left = 791.0
+margin_top = 288.0
+margin_right = 911.0
+margin_bottom = 328.0
+texture = ExtResource( 4 )
+
+[node name="Edit10" type="TextureRect" parent="Levels"]
+margin_left = 791.0
+margin_top = 336.0
+margin_right = 911.0
+margin_bottom = 376.0
+texture = ExtResource( 4 )
+
+[node name="Edit11" type="TextureRect" parent="Levels"]
+margin_left = 791.0
+margin_top = 384.0
+margin_right = 911.0
+margin_bottom = 424.0
 texture = ExtResource( 4 )
 
 [node name="Edit12" type="TextureRect" parent="Levels"]
-margin_left = 312.0
-margin_top = 448.0
-margin_right = 432.0
-margin_bottom = 488.0
+margin_left = 791.0
+margin_top = 432.0
+margin_right = 911.0
+margin_bottom = 472.0
 texture = ExtResource( 4 )
 
 [node name="Edit13" type="TextureRect" parent="Levels"]
-margin_left = 312.0
-margin_top = 496.0
-margin_right = 432.0
-margin_bottom = 536.0
+margin_left = 791.0
+margin_top = 480.0
+margin_right = 911.0
+margin_bottom = 520.0
 texture = ExtResource( 4 )
 
 [node name="Edit14" type="TextureRect" parent="Levels"]
-margin_left = 312.0
-margin_top = 544.0
-margin_right = 432.0
-margin_bottom = 584.0
+margin_left = 791.0
+margin_top = 528.0
+margin_right = 911.0
+margin_bottom = 568.0
 texture = ExtResource( 4 )
 
 [node name="Edit15" type="TextureRect" parent="Levels"]
-margin_left = 312.0
-margin_top = 592.0
-margin_right = 432.0
-margin_bottom = 632.0
+margin_left = 791.0
+margin_top = 576.0
+margin_right = 911.0
+margin_bottom = 616.0
 texture = ExtResource( 4 )
 
 [node name="Edit16" type="TextureRect" parent="Levels"]
 margin_left = 791.0
-margin_top = 400.0
+margin_top = 624.0
 margin_right = 911.0
-margin_bottom = 440.0
-texture = ExtResource( 4 )
-
-[node name="Edit17" type="TextureRect" parent="Levels"]
-margin_left = 791.0
-margin_top = 448.0
-margin_right = 911.0
-margin_bottom = 488.0
-texture = ExtResource( 4 )
-
-[node name="Edit18" type="TextureRect" parent="Levels"]
-margin_left = 791.0
-margin_top = 496.0
-margin_right = 911.0
-margin_bottom = 536.0
-texture = ExtResource( 4 )
-
-[node name="Edit19" type="TextureRect" parent="Levels"]
-margin_left = 791.0
-margin_top = 544.0
-margin_right = 911.0
-margin_bottom = 584.0
-texture = ExtResource( 4 )
-
-[node name="Edit20" type="TextureRect" parent="Levels"]
-margin_left = 791.0
-margin_top = 590.0
-margin_right = 911.0
-margin_bottom = 630.0
+margin_bottom = 664.0
 texture = ExtResource( 4 )
 
 [node name="StageNumber1" type="Sprite" parent="Levels"]
-position = Vector2( 225, 418 )
+position = Vector2( 225, 306 )
 texture = ExtResource( 5 )
-hframes = 10
+hframes = 8
+vframes = 2
 
 [node name="StageNumber2" type="Sprite" parent="Levels"]
-position = Vector2( 225, 466 )
+position = Vector2( 225, 354 )
 texture = ExtResource( 5 )
-hframes = 10
+hframes = 8
+vframes = 2
 frame = 1
 
 [node name="StageNumber3" type="Sprite" parent="Levels"]
-position = Vector2( 225, 514 )
+position = Vector2( 225, 402 )
 texture = ExtResource( 5 )
-hframes = 10
+hframes = 8
+vframes = 2
 frame = 2
 
 [node name="StageNumber4" type="Sprite" parent="Levels"]
-position = Vector2( 225, 562 )
+position = Vector2( 225, 450 )
 texture = ExtResource( 5 )
-hframes = 10
+hframes = 8
+vframes = 2
 frame = 3
 
 [node name="StageNumber5" type="Sprite" parent="Levels"]
-position = Vector2( 225, 610 )
+position = Vector2( 225, 498 )
 texture = ExtResource( 5 )
-hframes = 10
+hframes = 8
+vframes = 2
 frame = 4
 
 [node name="StageNumber6" type="Sprite" parent="Levels"]
-position = Vector2( 704, 418 )
+position = Vector2( 225, 546 )
 texture = ExtResource( 5 )
-hframes = 10
+hframes = 8
+vframes = 2
 frame = 5
 
 [node name="StageNumber7" type="Sprite" parent="Levels"]
-position = Vector2( 704, 466 )
+position = Vector2( 225, 594 )
 texture = ExtResource( 5 )
-hframes = 10
+hframes = 8
+vframes = 2
 frame = 6
 
 [node name="StageNumber8" type="Sprite" parent="Levels"]
-position = Vector2( 704, 514 )
+position = Vector2( 225, 642 )
 texture = ExtResource( 5 )
-hframes = 10
+hframes = 8
+vframes = 2
 frame = 7
 
 [node name="StageNumber9" type="Sprite" parent="Levels"]
-position = Vector2( 704, 562 )
+position = Vector2( 704, 306 )
 texture = ExtResource( 5 )
-hframes = 10
+hframes = 8
+vframes = 2
 frame = 8
 
 [node name="StageNumber10" type="Sprite" parent="Levels"]
-position = Vector2( 704, 608 )
+position = Vector2( 704, 354 )
 texture = ExtResource( 5 )
-hframes = 10
+hframes = 8
+vframes = 2
 frame = 9
+
+[node name="StageNumber11" type="Sprite" parent="Levels"]
+position = Vector2( 704, 402 )
+texture = ExtResource( 5 )
+hframes = 8
+vframes = 2
+frame = 10
+
+[node name="StageNumber12" type="Sprite" parent="Levels"]
+position = Vector2( 704, 450 )
+texture = ExtResource( 5 )
+hframes = 8
+vframes = 2
+frame = 11
+
+[node name="StageNumber13" type="Sprite" parent="Levels"]
+position = Vector2( 704, 498 )
+texture = ExtResource( 5 )
+hframes = 8
+vframes = 2
+frame = 12
+
+[node name="StageNumber14" type="Sprite" parent="Levels"]
+position = Vector2( 704, 546 )
+texture = ExtResource( 5 )
+hframes = 8
+vframes = 2
+frame = 13
+
+[node name="StageNumber15" type="Sprite" parent="Levels"]
+position = Vector2( 704, 594 )
+texture = ExtResource( 5 )
+hframes = 8
+vframes = 2
+frame = 14
+
+[node name="StageNumber16" type="Sprite" parent="Levels"]
+position = Vector2( 704, 642 )
+texture = ExtResource( 5 )
+hframes = 8
+vframes = 2
+frame = 15
 
 [node name="Cursor" type="Sprite" parent="."]
 position = Vector2( 42, 420 )

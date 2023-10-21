@@ -117,7 +117,7 @@ visible = false
 [node name="SpriteEffects" parent="FloorView" instance=ExtResource( 12 )]
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 90, 94 )
+position = Vector2( 3484, -1682 )
 z_index = 2
 
 [node name="Hud" parent="." instance=ExtResource( 10 )]

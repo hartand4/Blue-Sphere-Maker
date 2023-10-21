@@ -11,15 +11,15 @@ func _ready():
 	
 	data = Globals.load_data()
 	
-	for i in range(10):
+	for i in range(16):
 		var stage_label = $Levels.find_node("Stage%s" % (i+1))
 		var number_label = $Levels.find_node("StageNumber%s" % (i+1))
 		if data == null or not (('level%s' % i) in data):
 			stage_label.texture = load("res://assets/background/menu/Empty.png")
 			number_label.visible = false
 	
-	cursor_position = [0 if Globals.current_level_number < 5 else 2,
-		Globals.current_level_number if Globals.current_level_number < 5 else Globals.current_level_number - 5]
+	cursor_position = [0 if Globals.current_level_number < 8 else 2,
+		Globals.current_level_number if Globals.current_level_number < 8 else Globals.current_level_number - 8]
 
 func _process(_delta):
 	if $BackgroundMusic.get_playback_position() > 12:
@@ -30,7 +30,7 @@ func _process(_delta):
 	$Cursor2.frame = $Cursor.frame
 	
 	$Cursor.position.x = [42, 276, 521, 755][cursor_position[0]]
-	$Cursor.position.y = cursor_position[1]*48 + 420
+	$Cursor.position.y = cursor_position[1]*48 + 306
 	$Cursor2.position.y = $Cursor.position.y
 	$Cursor2.position.x = $Cursor.position.x + (228 if cursor_position[0] % 2 == 0 else 169)
 	
@@ -65,13 +65,13 @@ func _process(_delta):
 	
 	if Input.is_action_just_pressed("ui_up"):
 		cursor_position[1] -= 1
-		if cursor_position[1] < 0: cursor_position[1] += 5
+		if cursor_position[1] < 0: cursor_position[1] += 8
 	elif Input.is_action_just_pressed("ui_down"):
 		cursor_position[1] += 1
-		if cursor_position[1] > 4: cursor_position[1] -= 5
+		if cursor_position[1] >= 8: cursor_position[1] -= 8
 
 func handle_scene_change():
-	var trying_to_load = cursor_position[1] + (5 if cursor_position[0] >= 2 else 0)
+	var trying_to_load = cursor_position[1] + (8 if cursor_position[0] >= 2 else 0)
 	if cursor_position[0] % 2 == 0:
 		if data == null or not (('level%s' % trying_to_load) in data):
 			return

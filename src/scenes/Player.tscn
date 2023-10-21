@@ -73,6 +73,7 @@ anims/Run = SubResource( 2 )
 
 [node name="Collision" type="CollisionShape2D" parent="."]
 shape = SubResource( 3 )
+disabled = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( 0, -244 )

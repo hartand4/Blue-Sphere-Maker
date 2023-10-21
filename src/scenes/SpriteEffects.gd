@@ -81,7 +81,8 @@ func display_sprites(lst):
 		sprite[0].position.y = vertical_distance_poly(-player_to_sprite)
 		sprite[0].position.x = horizontal_distance_poly(-player_to_sprite)
 		
-		sprite[0].z_index = 240-(vector_dist)/(CHECKER_SIZE*CHECKER_SIZE) # z-index in [-4096, 4096]
+		sprite[0].z_index = max(240-(vector_dist)/(CHECKER_SIZE*CHECKER_SIZE), -4096) # z-index in [-4096, 4096]
+		sprite[0].z_index = min(sprite[0].z_index, 4096)
 
 func display_emerald(sprite):
 	sprite[0].visible = true
@@ -218,7 +219,7 @@ func make_sprite_list(initial):
 			if child is Area2D and (not child.has_method("is_active") or child.is_active() == true):
 				var new_sprite = child.find_node("Sprite").duplicate()
 				self.add_child(new_sprite)
-				list_of_sprites += [[new_sprite, child, Vector2.ZERO]]
+				list_of_sprites += [[new_sprite, child, Vector2(-500000,-500000)]]
 		return
 	
 	var i = 0
@@ -244,9 +245,9 @@ func add_new_sprites():
 			if not found:
 				var new_sprite = child1.find_node("Sprite").duplicate()
 				add_child(new_sprite)
-				list_of_sprites += [[new_sprite, child1, Vector2.ZERO]]
+				list_of_sprites += [[new_sprite, child1, Vector2(-500000,-500000)]]
 
 func add_new_sprite(object):
 	var new_sprite = object.find_node("Sprite").duplicate()
 	add_child(new_sprite)
-	list_of_sprites += [[new_sprite, object, Vector2.ZERO]]
+	list_of_sprites += [[new_sprite, object, Vector2(-500000,-500000)]]

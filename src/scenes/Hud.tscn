@@ -22,17 +22,20 @@ texture = ExtResource( 1 )
 [node name="Hundreds" type="Sprite" parent="SphereCounter"]
 position = Vector2( 39, 33 )
 texture = ExtResource( 4 )
-hframes = 10
+hframes = 8
+vframes = 2
 
 [node name="Tens" type="Sprite" parent="SphereCounter"]
 position = Vector2( 87, 33 )
 texture = ExtResource( 4 )
-hframes = 10
+hframes = 8
+vframes = 2
 
 [node name="Units" type="Sprite" parent="SphereCounter"]
 position = Vector2( 135, 33 )
 texture = ExtResource( 4 )
-hframes = 10
+hframes = 8
+vframes = 2
 
 [node name="RingCounter" type="TextureRect" parent="."]
 margin_left = 669.0
@@ -44,17 +47,20 @@ texture = ExtResource( 2 )
 [node name="Hundreds" type="Sprite" parent="RingCounter"]
 position = Vector2( 96, 33 )
 texture = ExtResource( 4 )
-hframes = 10
+hframes = 8
+vframes = 2
 
 [node name="Tens" type="Sprite" parent="RingCounter"]
 position = Vector2( 144, 33 )
 texture = ExtResource( 4 )
-hframes = 10
+hframes = 8
+vframes = 2
 
 [node name="Units" type="Sprite" parent="RingCounter"]
 position = Vector2( 192, 33 )
 texture = ExtResource( 4 )
-hframes = 10
+hframes = 8
+vframes = 2
 
 [node name="GetBlueSpheresText" type="TextureRect" parent="."]
 margin_left = 240.0

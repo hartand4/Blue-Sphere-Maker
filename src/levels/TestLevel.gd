@@ -46,6 +46,7 @@ func _process(_delta):
 			setup_sphere_placements()
 			count_blues()
 			$BackgroundMusic.playing = true
+			$Player/Collision.disabled = false
 		return
 	
 	if $BackgroundMusic.get_playback_position() > 225.663:
