@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/S3K_emerald.mp3-a7a96b19d57995193c5ba4777e57d09d.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/S3K_emerald.mp3"
+dest_files=[ "res://.import/S3K_emerald.mp3-a7a96b19d57995193c5ba4777e57d09d.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

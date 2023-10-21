@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/SpecialStageTheme2.mp3-edee51a1c36c521d9b9ae2738a15a25a.mp3str"
+
+[deps]
+
+source_file="res://assets/background/SpecialStageTheme2.mp3"
+dest_files=[ "res://.import/SpecialStageTheme2.mp3-edee51a1c36c521d9b9ae2738a15a25a.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

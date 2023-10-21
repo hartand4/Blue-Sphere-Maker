@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/background/SkyBG.png" type="Texture" id=1]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2( 1536, 768 )
+
+[node name="SkyBG" type="TextureRect" parent="ParallaxLayer"]
+margin_right = 1536.0
+margin_bottom = 768.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": true
+}

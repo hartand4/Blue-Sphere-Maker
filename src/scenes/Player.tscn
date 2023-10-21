@@ -1,0 +1,82 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://assets/player/Sonic.png" type="Texture" id=1]
+[ext_resource path="res://src/scenes/Player.gd" type="Script" id=2]
+
+[sub_resource type="Animation" id=4]
+resource_name = "Jump"
+length = 0.4
+loop = true
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 8, 9, 8, 10 ]
+}
+
+[sub_resource type="Animation" id=1]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0 ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "Run"
+length = 1.2
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 2, 1, 0, 4, 5, 6, 5, 4 ]
+}
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 22, 15 )
+
+[node name="Player" type="KinematicBody2D"]
+collision_mask = 62
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0, -42 )
+texture = ExtResource( 1 )
+hframes = 4
+vframes = 3
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite"]
+anims/Jump = SubResource( 4 )
+anims/RESET = SubResource( 1 )
+anims/Run = SubResource( 2 )
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+shape = SubResource( 3 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 0, -244 )
+rotating = true
+current = true
+
+[node name="SFXPlayer" type="AudioStreamPlayer" parent="."]

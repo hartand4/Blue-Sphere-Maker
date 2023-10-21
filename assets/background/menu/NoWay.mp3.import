@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/NoWay.mp3-3bf7c74a6162442dfa2454cecf4a0db1.mp3str"
+
+[deps]
+
+source_file="res://assets/background/menu/NoWay.mp3"
+dest_files=[ "res://.import/NoWay.mp3-3bf7c74a6162442dfa2454cecf4a0db1.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

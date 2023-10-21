@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Competition.mp3-36b4b35217617c7d5e4985888fdf3418.mp3str"
+
+[deps]
+
+source_file="res://assets/background/menu/Competition.mp3"
+dest_files=[ "res://.import/Competition.mp3-36b4b35217617c7d5e4985888fdf3418.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
