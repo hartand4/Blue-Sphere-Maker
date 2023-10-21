@@ -10,7 +10,7 @@ config_version=4
 
 [application]
 
-config/name="Blue Sphere Clone"
+config/name="Blue Sphere Maker"
 run/main_scene="res://src/levels/TitleScreen.tscn"
 config/icon="res://icon.png"
 
