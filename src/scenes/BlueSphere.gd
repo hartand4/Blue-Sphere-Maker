@@ -11,8 +11,6 @@ func _ready():
 		change_to_red()
 		if find_node("CollisionBlue"):
 			$CollisionBlue.disabled = true
-	
-	call_deferred("setup_ring", $Ring, false)
 
 func _process(_delta):
 	return
@@ -66,27 +64,14 @@ func is_active():
 
 func turn_to_ring():
 	active = false
-	
-	var new_ring = $Ring
-	self.remove_child(new_ring)
-	#new_ring.visible = true
-	call_deferred("setup_ring", new_ring, true)
-	
-	get_parent().add_child(new_ring)
-	new_ring.set_as_toplevel(true)
-	new_ring.global_position = self.global_position
-	
-	return new_ring
+	call_deferred("setup_ring")
+	return
 	
 	#call_deferred("unload")
 
-func setup_ring(ring, enabled):
-	if enabled:
-		ring.find_node("Collision").disabled = false
-		if self.find_node("CollisionBlue"):
-			$CollisionBlue.disabled = true
-		if self.find_node("CollisionRed"):
-			$CollisionRed.disabled = true
-		$Sprite.visible = false
-		return
-	ring.find_node("Collision").disabled = true
+func setup_ring():
+	if self.find_node("CollisionBlue"):
+		$CollisionBlue.disabled = true
+	if self.find_node("CollisionRed"):
+		$CollisionRed.disabled = true
+	$Sprite.visible = false

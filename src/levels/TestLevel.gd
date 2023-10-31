@@ -23,9 +23,13 @@ var palette := 0
 
 export var enable_3D := true
 
+var sphere_to_ring_dict = {}
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	Globals.perfect = false
+	
+	sphere_to_ring_dict = {}
 	
 	Globals.load_level(Globals.current_level_number)
 	
@@ -132,7 +136,7 @@ func check_for_closed_shape():
 			print('TURN TO RINGS')
 			$MakeSFX.play()
 			attempted_to_convert_to_rings = []
-			turn_to_rings(current_item.slice(0,8))
+			turn_to_rings(current_item.slice(0,8), true)
 			return
 		
 		# Check all current item's surroundings
@@ -167,26 +171,32 @@ func get_queue_item(queue, node):
 		if node == item[0]: return item
 	return []
 
-func turn_to_rings(item):
-	
+func turn_to_rings(item, original=false):
 	if sphere_type(item[0]) == 1:
 		if item[0].is_active():
-			var new_ring = item[0].turn_to_ring()
+			item[0].turn_to_ring()
+			var new_ring = sphere_to_ring_dict[item[0]]
+			new_ring.active = true
 			$FloorView/SpriteEffects.add_new_sprite(new_ring)
 		return
 	elif sphere_type(item[0]) == 0 and item[0].is_active():
-		var new_ring = item[0].turn_to_ring()
+		item[0].turn_to_ring()
+		var new_ring = sphere_to_ring_dict[item[0]]
+		new_ring.active = true
 		$FloorView/SpriteEffects.add_new_sprite(new_ring)
+		global_blue_count -= 1
 	else:
 		if item in attempted_to_convert_to_rings: return
 		attempted_to_convert_to_rings += [item]
 	for i in range(8):
 		if get_queue_item(list_of_spheres, item[i+1]) != [] and (
-			not item[i+1].has_method("is_active") or item[i+1].is_active()):
+			(not item[i+1].has_method("is_active") or item[i+1].is_active()) and
+			(item[i+1] in sphere_to_ring_dict or sphere_type(item[i+1]) > 1)):
 			call_deferred("turn_to_rings", get_queue_item(list_of_spheres, item[i+1]) )
 	
+	if !original: return
+	
 	setup_sphere_placements()
-	count_blues()
 	
 	if not enable_3D:
 		return
@@ -264,9 +274,13 @@ func setup_level(data):
 				
 				if char_to_check == 'b' or char_to_check == 'r':
 					sphere.has_ring = true
-				else:
-					var its_ring = sphere.find_node("Ring")
-					its_ring.queue_free()
+					var ring = load("res://src/scenes/Ring.tscn").instance()
+					self.add_child(ring)
+					ring.set_as_toplevel(true)
+					ring.position = position_for_here
+					ring.visible = false
+					ring.active = false
+					sphere_to_ring_dict[sphere] = ring
 			elif char_to_check == 'Y' or char_to_check == 'y':
 				var yellow = load("res://src/scenes/YellowSphere.tscn").instance()
 				self.add_child(yellow)
